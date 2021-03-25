@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Lista de produtos</title>
+  </head>
+  <body>
+
+    <div id="app">
+      <h1>Lista de produtos</h1>
+
+      <ul>
+        <li v-for="produto in colecaoProdutos">
+          <h3>{{ produto.nome }}</h3>
+          <p>R$ {{ produto.valor }}</p>
+        </li>
+      </ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
